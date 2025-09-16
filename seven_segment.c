@@ -1,0 +1,28 @@
+#include<p18f4580.h>
+void delay(int a);
+
+int main()
+{
+int i;
+int arr[16]={0x3F,0x06,0x5B,0x4F,0x66,0x6D,0x7D,0x07,
+             0x7F,0x6F,0x77,0x7C,0x39,0x5E,0x79,0x71};
+
+TRISC=0x00;
+while(1)
+{
+for(i=0;i<16;i++)
+{
+PORTC=arr[i];
+delay(100);
+}
+}
+}
+void delay(int a)
+{int i,j;
+for(i=0;i<a;i++)
+{
+for(j=0;j<a;j++)
+{
+}
+}
+}
